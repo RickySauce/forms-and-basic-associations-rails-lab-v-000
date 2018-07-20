@@ -10,7 +10,7 @@
     <%=f.number_field :genre_id, list: "genres_autocomplete" %>
       <datalist id="genres_autocomplete">
        <% Genre.all.each do |genre| %>
-         <option name="<%=genre.name%>" value="<%genre.id%>">
+         <option value="<%genre.id%>">
        <% end %>
       </datalist>
 
