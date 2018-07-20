@@ -3,7 +3,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
 
-  def genre_name=(genre)
+  def genre_name=(name)
     binding.pry
   end
 
