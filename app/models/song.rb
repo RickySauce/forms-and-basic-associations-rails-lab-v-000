@@ -4,5 +4,7 @@ class Song < ActiveRecord::Base
   has_many :notes
 
   def genre_name=(genre)
+    binding.pry
+  end 
+  
 end
-
