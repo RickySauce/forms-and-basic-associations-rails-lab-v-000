@@ -19,7 +19,7 @@ class Song < ActiveRecord::Base
     self.artist ? self.artist.name : nil
   end
 
-  def note_contents=(what)
+  def note_contents=(contents)
     binding.pry
   end
 
