@@ -26,7 +26,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
-    self.notes.collect {|note|note.content unless note.blank?}
+    self.notes.collect {|note|note.content unless note.content.empty?}
   end
 
 end
