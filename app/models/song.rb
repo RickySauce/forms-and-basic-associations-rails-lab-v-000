@@ -5,6 +5,6 @@ class Song < ActiveRecord::Base
 
   def genre_name=(genre)
     binding.pry
-  end 
-  
+  end
+
 end
